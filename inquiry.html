@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modus Furniture - Anfrageliste</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div id="navigation">
+        <ul id="navlist">
+          <img id="navlogo" src="./images/Modus-Logo-weiß2.png" />
+            <li> <a href="./index.html" class="link">Home</a></li>
+            <li> <a href="/products" class="link">Products</a>
+            <li> <a href="/inquiry" class="link">Anfrageliste</a></li>
+            <li> <a href="./virtualtours.html" class="link">Virtual Tours</a></li>
+            <li> <a href="https://www.modusfurniture.com/" class="link">Modus USA</a></li>
+            <li> <a href="./contact.html" class="link">Contact</a></li>
+        </ul>
+
+    </div>
+
+  <main>
+    <div class="inquiry-page-container">
+      <h1>Anfrageliste</h1>
+      <p class="inquiry-intro">Hier sehen Sie alle Produkte, die Sie zur Anfrage vorgemerkt haben.
+      Füllen Sie das Formular aus, um die Liste an uns zu senden.</p>
+
+      <div id="inquiry-list" class="inquiry-list"></div>
+
+      <h2>Anfrage senden</h2>
+      <form id="inquiry-form" class="inquiry-form">
+        <label for="inquiry-name">Name *</label>
+        <input type="text" id="inquiry-name" name="name" required autocomplete="name">
+
+        <label for="inquiry-company">Firma</label>
+        <input type="text" id="inquiry-company" name="company" autocomplete="organization">
+
+        <label for="inquiry-email">E-Mail *</label>
+        <input type="email" id="inquiry-email" name="email" required autocomplete="email">
+
+        <label for="inquiry-message">Nachricht</label>
+        <textarea id="inquiry-message" name="message" rows="6" placeholder="Ihre Nachricht an uns ..."></textarea>
+
+        <button type="submit" id="inquiry-submit" class="inquiry-submit-btn">Anfrage an info@modusfurniture.eu senden</button>
+        <p id="inquiry-status" class="inquiry-status"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Modus Furniture</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
